@@ -28,9 +28,14 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 /* =========================
    CORS CONFIG
 ========================= */
+const allowedOrigins = [
+  process.env.FRONTEND_URL || "https://frontend-whatsapp-five.vercel.app",
+  "http://localhost:5173",
+];
+
 app.use(
   cors({
-    origin: ["https://frontend-whatsapp-five.vercel.app", "http://localhost:5173"],
+    origin: allowedOrigins,
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   })
