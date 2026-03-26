@@ -6,7 +6,7 @@
 
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "start": "node server.ts"
+    "start": "node server.js"
   },
 
   "keywords": [],
