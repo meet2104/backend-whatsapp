@@ -1,0 +1,62 @@
+# 🔒 Dependencies
+
+node_modules/
+
+# 🔐 Environment variables (VERY IMPORTANT)
+
+.env
+.env.*
+!.env.example
+
+# 🧾 Logs
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 📦 Build / dist
+
+dist/
+build/
+
+# 🗂️ OS files
+
+.DS_Store
+Thumbs.db
+
+# 🧪 Testing
+
+coverage/
+
+# 🧹 Cache
+
+.cache/
+.parcel-cache/
+
+# 🧠 IDE / Editor
+
+.vscode/
+.idea/
+*.swp
+
+# 🔑 Optional keys / uploads
+
+uploads/
+*.pem
+*.key
+
+# 🐳 Docker (if used)
+
+.dockerignore
+
+# 🚀 Vercel / deployment
+
+.vercel
+
+# 🧬 Misc
+
+*.tgz
+*.bak
+*.tmp
