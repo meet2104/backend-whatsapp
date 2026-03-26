@@ -78,4 +78,9 @@ app.use(
   }
 );
 
+/* Test Route */
+app.get("/", (req, res) => {
+  res.send("API is running 🚀");
+});
+
 export default app;
