@@ -11,6 +11,7 @@ import orderItemRoutes from "../src/app/modules/orderitem/order-item.routes.js";
 import productRoutes from "../src/app/modules/product/product.routes.js";
 import unitRoutes from "../src/app/modules/product/unit.routes.js";
 import customerRoutes from "../src/app/modules/customers/customer.routes.js";
+import userStateRoutes from "../src/app/modules/userState/userState.routes.js";
 // ✅ Ensure models are registered
 import "../src/app/modules/product/unit.model.js";
 import "../src/app/modules/role/Role.model.js";
@@ -62,6 +63,7 @@ app.use("/api/order-items", orderItemRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/units", unitRoutes);
 app.use("/api/customers", customerRoutes);
+app.use("/api/user-state", userStateRoutes);
 app.use("/api/carts", (await import("../src/app/modules/cart/cart.routes.js")).default);
 app.use("/api/cart-items", (await import("../src/app/modules/cartitem/cart-item.routes.js")).default);
 
